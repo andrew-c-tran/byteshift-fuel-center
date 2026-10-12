@@ -31,11 +31,6 @@ rm -f fuel-center-gerbers.zip && "$PY" -c "import zipfile,glob,os; z=zipfile.Zip
 
 echo "== previews"
 mkdir -p preview
-# kicad-cli 8 has no 'pcb render'; plot both sides to SVG and rasterise with ImageMagick if present
-for side in front back; do
-  if [ $side = front ]; then L=F.Cu,F.Paste,F.Silkscreen,F.Mask,Edge.Cuts; else L=B.Cu,B.Paste,B.Silkscreen,B.Mask,Edge.Cuts; fi
-  kicad-cli pcb export svg --layers $L --page-size-mode 2 --exclude-drawing-sheet -o preview/pcb-$side.svg fuel-center.kicad_pcb >/dev/null
-  command -v convert >/dev/null && convert -density 300 -background white preview/pcb-$side.svg preview/pcb-$side.png && rm preview/pcb-$side.svg || echo "kept svg preview"
-done
+"$PY" ../render_preview.py
 kicad-cli sch export pdf -o preview/fuel-center-schematic.pdf fuel-center.kicad_sch || echo "schematic pdf skipped"
 echo "done: $(ls gerbers | wc -l) gerber files, $(du -h fuel-center-gerbers.zip | cut -f1) zip"
