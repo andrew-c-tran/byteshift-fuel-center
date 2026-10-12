@@ -1,0 +1,6 @@
+firmware/build/
+firmware/s32k116/build/
+hardware/kicad/gerbers/
+hardware/kicad/*-backups/
+hardware/kicad/*.kicad_prl
+hardware/kicad/fp-info-cache

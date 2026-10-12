@@ -1,0 +1,8 @@
+(footprint "fuel-center:MOUNTHOLE"
+  (layer "F.Cu")
+  (tedit 6abac981)
+  (attr through_hole exclude_from_pos_files exclude_from_bom)
+  (fp_circle (center 0 0) (end 3.2 0) (layer "F.Fab") (width 0.1))
+  (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask)
+    (clearance 1.5))
+)

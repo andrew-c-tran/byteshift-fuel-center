@@ -1,0 +1,6 @@
+(footprint "fuel-center:TESTPOINT"
+  (layer "F.Cu")
+  (tedit 6abac981)
+  (attr smd exclude_from_pos_files exclude_from_bom)
+  (pad "1" smd circle (at 0 0) (size 1.5 1.5) (layers "F.Cu" "F.Mask"))
+)

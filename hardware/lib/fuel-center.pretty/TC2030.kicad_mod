@@ -1,0 +1,13 @@
+(footprint "fuel-center:TC2030"
+  (layer "F.Cu")
+  (tedit 6abac981)
+  (attr smd exclude_from_pos_files exclude_from_bom)
+  (pad "1" smd circle (at -1.27 -0.635) (size 0.79 0.79) (layers "F.Cu" "F.Mask"))
+  (pad "2" smd circle (at 0.0 -0.635) (size 0.79 0.79) (layers "F.Cu" "F.Mask"))
+  (pad "3" smd circle (at 1.27 -0.635) (size 0.79 0.79) (layers "F.Cu" "F.Mask"))
+  (pad "4" smd circle (at -1.27 0.635) (size 0.79 0.79) (layers "F.Cu" "F.Mask"))
+  (pad "5" smd circle (at 0.0 0.635) (size 0.79 0.79) (layers "F.Cu" "F.Mask"))
+  (pad "6" smd circle (at 1.27 0.635) (size 0.79 0.79) (layers "F.Cu" "F.Mask"))
+  (pad "" np_thru_hole circle (at -2.54 0) (size 0.99 0.99) (drill 0.99) (layers *.Cu *.Mask))
+  (pad "" np_thru_hole circle (at 2.54 0) (size 0.99 0.99) (drill 0.99) (layers *.Cu *.Mask))
+)

@@ -1,0 +1,2 @@
+(version 1)
+(rule "single thermal spoke ok (GND is also routed)" (constraint min_resolved_spokes 1))
